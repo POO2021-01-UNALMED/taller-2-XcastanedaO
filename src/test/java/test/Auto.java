@@ -18,9 +18,10 @@ public class Auto {
 		}		
 	}
 	return cant;
-}
+	
+	}
 
-	void verificarIntegridad() {
+	String verificarIntegridad() {
 		for(Asiento asiento: asientos) {
 			/*if(asiento.registro != registro) {
 				System.out.println("Las piezas no son originales.");
@@ -30,10 +31,10 @@ public class Auto {
 			}*/
 			
 			if(asiento.registro == registro & motor.registro == registro) {
-				System.out.println("Auto original");
+				return "Auto original";
 			}
 		}
-		System.out.println("Las piezas no son originales.");
+				return "Las piezas no son originales.";
 			
 	}
 
