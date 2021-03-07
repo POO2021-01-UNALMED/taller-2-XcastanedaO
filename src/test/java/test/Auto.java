@@ -35,7 +35,7 @@ public class Auto {
 		String aux = null;
 		for(Asiento asiento: asientos) {
 		if(asiento != null) {
-			if(asiento.registro == registro & motor.registro == registro) {
+			if(asiento.registro == registro && motor.registro == registro) {
 		        aux="si";
 		     }else {
 		    	 aux="no";
