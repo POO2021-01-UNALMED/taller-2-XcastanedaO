@@ -30,7 +30,7 @@ public class Auto {
 				System.out.println("Las piezas no son originales.");
 			}*/
 			
-			if(asiento.registro == registro & motor.registro == registro) {
+			if(asiento.registro == this.registro & motor.registro == this.registro) {
 				return "Auto original";
 			}
 		}
