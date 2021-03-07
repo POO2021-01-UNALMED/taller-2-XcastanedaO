@@ -17,41 +17,26 @@ public class Auto {
 			cant++;
 		}		
 	}
-	return cant;
-	
-	}
+	return cant; }
 
 	String verificarIntegridad() {	
-		/*for(Asiento asiento: asientos) {
-			if(asiento != null) {
-				if(asiento.registro == registro & motor.registro == registro) {
-			        return "Auto original";
-			     }
-			}
-			
-		 }
-			
-		return "Las piezas no son originales.";	*/	
-		String aux = null;
-		for(Asiento asiento: asientos) {
-		if(asiento != null) {
-			if(asiento.registro == registro && motor.registro == registro) {
-		        aux="si";
-		     }else {
-		    	 aux="no";
-		     }
-		}
+		String aux="si";
 		
-	 }
-		if(aux.equals("si")) {
-			return "Auto original";
-		}else {
-			return "Las piezas no son originales.";
-		}
-				
-		
-		
-		
+        for(Asiento asiento: asientos) {
+        	if(asiento.registro != registro){
+        		aux="no";
+        	}
+        }
+        
+        if(motor.registro != registro) {
+        	aux ="no";
+        }
+        
+        if(aux.equals("no")) {
+        	return "Las piezas no son originales";
+        }else {
+        	return "Auto original";
+        }
 	}
 	
 	
