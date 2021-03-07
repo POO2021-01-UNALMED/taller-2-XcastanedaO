@@ -13,7 +13,7 @@ public class Auto {
 	int cantidadAsientos(){
 	int cant=0;
 	for(Asiento asiento: asientos) {
-		if(asiento.equals(null) == false){
+		if(asiento != null){
 			cant++;
 		}		
 	}
