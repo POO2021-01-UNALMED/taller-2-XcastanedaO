@@ -34,8 +34,7 @@ public class Auto {
 			}
 		}
 		System.out.println("Las piezas no son originales.");
-				
-		
+			
 	}
 
 
