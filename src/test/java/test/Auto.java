@@ -22,12 +22,20 @@ public class Auto {
 
 	void verificarIntegridad() {
 		for(Asiento asiento: asientos) {
-			if(asiento.registro != registro | motor.registro != registro){
+			/*if(asiento.registro != registro) {
 				System.out.println("Las piezas no son originales.");
 				break;
+			}else if(motor.registro != registro){
+				System.out.println("Las piezas no son originales.");
+			}*/
+			
+			if(asiento.registro == registro & motor.registro == registro) {
+				System.out.println("Auto original");
 			}
-		}	
-		System.out.println("Auto original");
+		}
+		System.out.println("Las piezas no son originales.");
+				
+		
 	}
 
 
