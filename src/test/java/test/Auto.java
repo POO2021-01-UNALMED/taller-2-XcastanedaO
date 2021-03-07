@@ -21,11 +21,9 @@ public class Auto {
 	
 	}
 
-	String verificarIntegridad() {
-		String aux;
-		
+	String verificarIntegridad() {	
 		for(Asiento asiento: asientos) {
-			if(/*asiento.registro == registro &&*/ motor.registro == registro) {
+			if(asiento.registro == registro && motor.registro == registro) {
 		        return "Auto original";
 		     }
 		 }
