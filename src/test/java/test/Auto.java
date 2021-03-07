@@ -22,9 +22,12 @@ public class Auto {
 	String verificarIntegridad() {	
 		String aux="si";
 		
+		
         for(Asiento asiento: asientos) {
-        	if(asiento.registro != registro){
-        		aux="no";
+        	if(asiento !=  null) {
+        		if(asiento.registro != registro){
+            		aux="no";
+            	}
         	}
         }
         
